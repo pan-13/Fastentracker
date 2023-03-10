@@ -10,6 +10,9 @@ def fastenzeit(startzeit):
     stunden, rest = divmod(delta.seconds, 3600)
     minuten, sekunden = divmod(rest, 60)
     st.write("Du fastest seit {} Tagen, {} Stunden, {} Minuten und {} Sekunden".format(tage, stunden, minuten, sekunden))
+    gesamtsekunden = delta.total_seconds()
+    progress = min(gesamtsekunden / (7 * 24 * 60 * 60), 1.0)
+    st.progress(progress)
 
 
 def main():
