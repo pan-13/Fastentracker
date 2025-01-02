@@ -54,7 +54,7 @@ def progress_bar(progress):
 
 def main():
     st.title("Fastenzeitrechner")
-    startzeit = datetime.datetime(2023, 11, 9, 14, 0, 0)
+    startzeit = datetime.datetime(2025, 1, 1, 12, 0, 0)
     while True:
         fastenzeit(startzeit)
         time.sleep(1)
